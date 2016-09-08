@@ -3,18 +3,18 @@
 
 .cbp-qtrotator {
 	position: relative;
-	margin: 3em auto 5em auto;
+	margin: 0 auto;
 	max-width: 800px;
 	width: 100%;
-	min-height: 400px;
+	min-height: 200px;
 }
 
 .cbp-qtrotator .cbp-qtcontent {
 	position: absolute;
-	min-height: 200px;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
-	padding: 2em 0;
+	min-height: 0px;
+	border-top: 1px solid tranparent;
+	border-bottom: 1px solid tranparent;
+	padding: 0;
 	top: 0;
 	z-index: 0;
 	opacity: 0;
@@ -46,27 +46,34 @@
 
 .cbp-qtprogress {
 	position: absolute;
-	background: #47a3da;
+	background: $color-primary-two;
 	height: 1px;
 	width: 0%;
 	top: 0;
+	left:0;
 	z-index: 1000;
 }
 
+.cbp-qtrotator blockquote::before {
+	display:none;
+}
 .cbp-qtrotator blockquote {
 	margin: 0;
 	padding: 0;
 }
 
-.cbp-qtrotator blockquote p {
-	font-size: 2em;
-	color: #888;
-	font-weight: 300;
-	margin: 0.4em 0 1em;
+.slide_content .cbp-qtrotator blockquote p {
+	font-family: $font-headlines;
+    margin: 40px 0 0 0;
+    width: 100%;
+	@include font(2.6, 3.8);
+	letter-spacing: 0.08rem;
+    font-weight: 400;
+    color: $color-grey;
+	font-style:normal;
 }
 
 .cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
 }
 
 .cbp-qtrotator blockquote footer:before {
@@ -74,6 +81,4 @@
 }
 
 .cbp-qtrotator .cbp-qtcontent img {
-	float: right;
-	margin-left: 3em;
 }
