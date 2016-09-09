@@ -1,4 +1,44 @@
 @media only screen and (max-width: 1200px) {
+	
+/* # Site Header
+--------------------------------------------- */
+.site-header {
+	position:absolute;
+}
+
+.home-section .site-header.dark {
+	background-color: transparent;
+}
+
+.title-area,
+.site-header.dark .title-area,
+.header-full-width .title-area {
+	float:none;
+	margin:0 auto;
+	padding: 25px 0 0;
+	width: 280px;
+}
+
+/* # Site Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	width:100%;
+	float:left;
+}
+
+.genesis-nav-menu {
+	margin:0 auto;
+	max-width:90%;
+	display:flex;
+	justify-content:space-between;
+}
+
+.site-header.dark .genesis-nav-menu a {
+    padding-top:30px;
+	padding-bottom:20px;
+}
+
 
 
 /* # Colour background

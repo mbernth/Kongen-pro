@@ -1,32 +1,22 @@
 @media only screen and (max-width: 480px) {
 
-.title-area {
-	padding: 27px 0;
+
+
+
+/* # Site Header
+--------------------------------------------- */
+.title-area,
+.site-header.dark .title-area,
+.header-full-width .title-area {
+	padding-top:30px;
+	margin-bottom:30px;
+	width: 200px;
 }
+
 .title-area .site-title > a {
-	width: 250px;
-    height: 12px;
+	width: 200px;
+    height: 14px;
 }
-
-
-/* # Slider
-
-
-.slide_content{
-    width: 90%;
-    left: 5%;
-    bottom: 50%;
-}
-
-.slide_content h2{
-	@include font(2.8, 2.8);
-	max-width:90%;
-}
-
-.frontpage-icon {
-	display:none;
-}
---------------------------------------------------- */
 
 /* ## Entries
 --------------------------------------------- */
@@ -55,6 +45,14 @@
 
 .full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
 	@include font(1.4, 1.4);
+}
+
+/* Quotes Rotator
+--------------------------------------------- */
+
+.slide_content .cbp-qtrotator blockquote p {
+	@include font(1.8, 3);
+	letter-spacing: normal;
 }
 
 

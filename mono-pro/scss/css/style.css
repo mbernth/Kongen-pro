@@ -6294,11 +6294,11 @@ html, body {
 .title-area {
   float: left;
   padding: 25px 0;
-  width: 200px; }
+  width: 300px; }
 
 .header-full-width .title-area {
   float: left;
-  width: 200px; }
+  width: 300px; }
 
 .site-title {
   font-size: 32px;
@@ -6765,8 +6765,8 @@ body.has-active-menu {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 35px;
   padding-bottom: 25px;
   font-weight: 700;
@@ -8633,6 +8633,14 @@ Pin Page
 	- Max-width: 1500px
 */
 @media only screen and (max-width: 1500px) {
+  /* # Site Header
+  ---------------------------------------------------------------------------------------------------- */
+  .site-header .wrap {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+
   /* # Defaults
   ---------------------------------------------------------------------------------------------------- */
   /* ## Typographical Elements
@@ -8655,8 +8663,22 @@ Pin Page
     font-weight: 300;
     margin: 0; }
 
+  /* # Site Navigation
+  ---------------------------------------------------------------------------------------------------- */
+  .genesis-nav-menu {
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 11px;
+    line-height: 1.1rem; }
+
+  .genesis-nav-menu a {
+    letter-spacing: 0.05rem; }
+
   /* # Slider
   --------------------------------------------------- */
+  .slide_content {
+    top: 15%; }
+
   .full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
     font-size: 68px;
     font-size: 6.8rem;
@@ -8942,11 +8964,47 @@ Pin Page
       margin-right: 4%; }
     .full-width-content .content .coll4.case_preview:nth-child(2n),
     .coll4.case_preview:nth-child(2n) {
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  /* Quotes Rotator
+  --------------------------------------------- */
+  .cbp-qtrotator {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    min-height: 150px; } }
 /*
 	- Max-width: 1280px
 */
 @media only screen and (max-width: 1280px) {
+  /* ## Title Area
+  --------------------------------------------- */
+  .title-area .site-title > a {
+    width: 280px;
+    height: 20px; }
+
+  .header-full-width .title-area {
+    width: 280px; }
+
+  /* # Site Navigation
+  ---------------------------------------------------------------------------------------------------- */
+  .nav-primary .wrap {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .genesis-nav-menu a {
+    letter-spacing: 0.02rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px; }
+
+  .genesis-nav-menu .sub-menu a {
+    padding: 15px 25px;
+    width: 250px; }
+
   /* # Slider
   --------------------------------------------------- */
   .slide_content {
@@ -8974,7 +9032,6 @@ Pin Page
     line-height: 2.4rem; }
 
   .site-header {
-    position: absolute;
     margin-top: 0px; }
 
   .has-push-top .site-header {
@@ -8988,11 +9045,6 @@ Pin Page
   .home-section .site-header,
   .home-section .site-header.dark {
     margin-top: 0px; }
-
-  /* ## Title Area
-  --------------------------------------------- */
-  .header-full-width .title-area {
-    width: 150px; }
 
   /* ## Before header
   --------------------------------------------- */
@@ -9377,22 +9429,6 @@ Pin Page
     padding-top: 40px;
     margin-top: 0px; }
 
-  /* # Site Navigation
-  --------------------------------------------- */
-  .genesis-nav-menu {
-    font-size: 11px;
-    font-size: 1.1rem;
-    line-height: 11px;
-    line-height: 1.1rem; }
-
-  .genesis-nav-menu a {
-    padding-top: 25px;
-    padding-bottom: 28px; }
-
-  .genesis-nav-menu .sub-menu a {
-    padding: 15px 25px;
-    width: 250px; }
-
   /* # Footer Widgets
   --------------------------------------------- */
   .footer-widgets,
@@ -9449,6 +9485,38 @@ Pin Page
 	- Max-width: 1200px
 */
 @media only screen and (max-width: 1200px) {
+  /* # Site Header
+  --------------------------------------------- */
+  .site-header {
+    position: absolute; }
+
+  .home-section .site-header.dark {
+    background-color: transparent; }
+
+  .title-area,
+  .site-header.dark .title-area,
+  .header-full-width .title-area {
+    float: none;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    width: 280px; }
+
+  /* # Site Navigation
+  --------------------------------------------- */
+  .nav-primary {
+    width: 100%;
+    float: left; }
+
+  .genesis-nav-menu {
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between; }
+
+  .site-header.dark .genesis-nav-menu a {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+
   /* # Colour background
   --------------------------------------------- */
   .content .gridcontainer.Non .coll2 {
@@ -9545,6 +9613,11 @@ Pin Page
 	- Max-width: 1024px
 */
 @media only screen and (max-width: 1024px) {
+  /* # Site Navigation
+  --------------------------------------------- */
+  .genesis-nav-menu {
+    max-width: 100%; }
+
   /* # Slider
   --------------------------------------------------- */
   .slide_content h2 {
@@ -9845,44 +9918,46 @@ Pin Page
     .footer-widgets .widget-area:nth-child(4n) {
       margin-right: 0; }
 
-  .title-area {
-    padding: 30px 0; }
-
-  .title-area .site-title > a {
-    width: 250px;
-    height: 16px; }
-
   /* # Site Navigation
-  --------------------------------------------- */
+  --------------------------------------------- 
+  
   .genesis-nav-menu li,
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
-    float: none; }
-
+  	float: none;
+  }
+  
   .genesis-nav-menu,
   .site-description,
   .site-header .title-area,
   .site-header .search-form,
   .site-title {
-    text-align: center; }
-
+  	text-align: center;
+  }
+  
   .genesis-nav-menu a {
-    letter-spacing: 0px; }
-
+  	letter-spacing:0px;
+  }
+  
   .genesis-nav-menu a,
   .genesis-nav-menu > .first > a,
   .genesis-nav-menu > .last > a {
-    padding: 27px 10px; }
-
+  	padding: 27px 10px;
+  }
+  
   .site-header .search-form {
-    margin: 16px auto; }
-
+  	margin: 16px auto;
+  }
+  
   .genesis-nav-menu li.right {
-    display: none; }
-
+  	display: none;
+  }
+  
   .footer-widgets-1 {
-    margin-right: 0; }
-
+  	margin-right: 0;
+  }
+  
+  */
   /* ## Buttons
   --------------------------------------------- */
   .site-inner .gridcontainer .button {
@@ -10212,11 +10287,18 @@ Pin Page
 
   /* # Site Header
   ---------------------------------------------------------------------------------------------------- */
+  .title-area,
+  .site-header.dark .title-area,
+  .header-full-width .title-area {
+    float: left; }
+
   .site-header .wrap {
-    max-width: 100%; }
+    max-width: 100%;
+    padding: 0; }
 
   .site-header .title-area {
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin-bottom: 20px; }
 
   .before-header .wrap {
     padding: 5px 0px; }
@@ -10320,6 +10402,7 @@ Pin Page
   .genesis-nav-menu.responsive-menu .menu-item:hover {
     position: static; }
 
+  .site-header.dark .genesis-nav-menu a,
   .genesis-nav-menu.responsive-menu .current-menu-item > a,
   .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
   .genesis-nav-menu.responsive-menu a,
@@ -10724,14 +10807,6 @@ Pin Page
 	- Max-width: 600px
 */
 @media only screen and (max-width: 600px) {
-  /* # Slider
-  --------------------------------------------------- */
-  .slide_content p {
-    display: none; }
-
-  .frontpage-icon {
-    display: none; }
-
   /* ## Typographical Elements
   --------------------------------------------- */
   /* # Headings
@@ -10961,6 +11036,19 @@ Pin Page
     line-height: 16px;
     line-height: 1.6rem; }
 
+  /* Quotes Rotator
+  --------------------------------------------- */
+  .cbp-qtrotator {
+    max-width: 400px;
+    min-height: 100px; }
+
+  .slide_content .cbp-qtrotator blockquote p {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+    letter-spacing: 0.05rem; }
+
   /* Countdown
   --------------------------------------------------- */
   div#countdown {
@@ -10988,31 +11076,19 @@ Pin Page
 	- Max-width: 480px
 */
 @media only screen and (max-width: 480px) {
-  .title-area {
-    padding: 27px 0; }
+  /* # Site Header
+  --------------------------------------------- */
+  .title-area,
+  .site-header.dark .title-area,
+  .header-full-width .title-area {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    width: 200px; }
 
   .title-area .site-title > a {
-    width: 250px;
-    height: 12px; }
+    width: 200px;
+    height: 14px; }
 
-  /* # Slider
-  
-  
-  .slide_content{
-      width: 90%;
-      left: 5%;
-      bottom: 50%;
-  }
-  
-  .slide_content h2{
-  	@include font(2.8, 2.8);
-  	max-width:90%;
-  }
-  
-  .frontpage-icon {
-  	display:none;
-  }
-  --------------------------------------------------- */
   /* ## Entries
   --------------------------------------------- */
   .gridcontainer .row_headline {
@@ -11045,6 +11121,15 @@ Pin Page
     font-size: 1.4rem;
     line-height: 14px;
     line-height: 1.4rem; }
+
+  /* Quotes Rotator
+  --------------------------------------------- */
+  .slide_content .cbp-qtrotator blockquote p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 30px;
+    line-height: 3rem;
+    letter-spacing: normal; }
 
   /* Countdown
   --------------------------------------------------- */

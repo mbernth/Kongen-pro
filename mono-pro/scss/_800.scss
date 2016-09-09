@@ -14,11 +14,19 @@
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
+.title-area, 
+.site-header.dark .title-area, 
+.header-full-width .title-area {
+	float:left;
+}
+
 .site-header .wrap {
 	max-width:100%;
+	padding:0;
 }
 .site-header .title-area {
 	margin-left:5%;
+	margin-bottom:20px;
 }
 
 .before-header .wrap {
@@ -132,7 +140,7 @@ ul.genesis-nav-menu li li{
 .genesis-nav-menu.responsive-menu .menu-item:hover {
 	position: static;
 }
-	
+.site-header.dark .genesis-nav-menu a,
 .genesis-nav-menu.responsive-menu .current-menu-item > a,
 .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu.responsive-menu a,
