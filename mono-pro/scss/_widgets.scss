@@ -57,3 +57,27 @@
 .full-width-content .widget-wrap .entry-content{
 	padding-top:40px;
 }
+
+/* ## AFC widget area
+--------------------------------------------- */
+
+.gridcontainer .coll1 .acf-widget-area{
+	margin:0 auto;
+	max-width:800px;
+}
+
+.acf-widget-area .featured-content .entry {
+	border-bottom: 1px solid $color-black;
+	padding: 0 0 80px;
+}
+
+.Black .acf-widget-area .featured-content .entry {
+	border-bottom: 1px solid $color-grey;
+	padding: 0 0 80px;
+}
+
+.acf-widget-area .featured-content .entry:last-child {
+	border-bottom: 0px solid $color-black;
+	padding: 0 0 80px;
+}
+

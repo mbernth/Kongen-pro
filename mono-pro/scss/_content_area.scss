@@ -146,11 +146,11 @@
 
 .full-width-content .gridcontainer.Black .button{
 	background-color: shade( $color-primary-two, 0%);
-	color:shade( $color-grey, 0%);
+	color:shade( $color-black, 0%);
 }
 .full-width-content .gridcontainer.Black .button:hover{
-	background-color: shade( $color-grey, 80%);
-	color:shade( $color-grey, 5%);
+	background-color: shade( $color-primary-two, 40%);
+	color:shade( $color-grey, 0%);
 }
 
 .gridcontainer a.button span,

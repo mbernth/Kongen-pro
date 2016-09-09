@@ -113,7 +113,8 @@
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: $color-primary-one;
+  background: $color-primary-two;
+  border-radius:50%;
 }
 .Black .cd-timeline-img.cd-picture,
 .Red .cd-timeline-img.cd-picture {
@@ -208,8 +209,9 @@
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  border-top: 5px solid $color-primary-one;
+  border-top: 5px solid $color-primary-two;
   padding-top:45px;
+  top:8px;
 }
 .Black .cd-timeline-content,
 .Red .cd-timeline-content {
@@ -290,7 +292,7 @@
     position: absolute;
     width: 100%;
     left: 111%;
-    top: -17px;
+    top: -24px;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;

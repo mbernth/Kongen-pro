@@ -2022,6 +2022,14 @@ th {
 
 /* # Gravity Forms
 ---------------------------------------------------------------------------------------------------- */
+.gridcontainer a.gform_anchor {
+  display: inline-block;
+  border-bottom: none;
+  box-shadow: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0; }
+
 .gform_wrapper select,
 .gform_wrapper textarea {
   font-size: inherit;
@@ -4929,6 +4937,24 @@ img.alignright,
 .full-width-content .widget-wrap .entry-content {
   padding-top: 40px; }
 
+/* ## AFC widget area
+--------------------------------------------- */
+.gridcontainer .coll1 .acf-widget-area {
+  margin: 0 auto;
+  max-width: 800px; }
+
+.acf-widget-area .featured-content .entry {
+  border-bottom: 1px solid #11161c;
+  padding: 0 0 80px; }
+
+.Black .acf-widget-area .featured-content .entry {
+  border-bottom: 1px solid #ead3b4;
+  padding: 0 0 80px; }
+
+.acf-widget-area .featured-content .entry:last-child {
+  border-bottom: 0px solid #11161c;
+  padding: 0 0 80px; }
+
 /*
 - Plugins
 	- Genesis eNews Extended
@@ -5736,7 +5762,8 @@ div.cd-box {
   margin-top: -12px; }
 
 .cd-timeline-img.cd-picture {
-  background: #031f37; }
+  background: #fabd43;
+  border-radius: 50%; }
 
 .Black .cd-timeline-img.cd-picture,
 .Red .cd-timeline-img.cd-picture {
@@ -5808,8 +5835,9 @@ div.cd-box {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  border-top: 5px solid #031f37;
-  padding-top: 45px; }
+  border-top: 5px solid #fabd43;
+  padding-top: 45px;
+  top: 8px; }
 
 .Black .cd-timeline-content,
 .Red .cd-timeline-content {
@@ -5883,7 +5911,7 @@ div.cd-box {
     position: absolute;
     width: 100%;
     left: 111%;
-    top: -17px; }
+    top: -24px; }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right; }
@@ -7110,11 +7138,11 @@ body.has-active-menu {
 
 .full-width-content .gridcontainer.Black .button {
   background-color: #fabd43;
-  color: #ead3b4; }
+  color: #11161c; }
 
 .full-width-content .gridcontainer.Black .button:hover {
-  background-color: #2f2a24;
-  color: #dec8ab; }
+  background-color: #967128;
+  color: #ead3b4; }
 
 .gridcontainer a.button span,
 .entry-content a.button span {
@@ -8115,7 +8143,7 @@ Pin Page
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #031f37;
+  background-color: #11161c;
   font-size: 10px;
   font-size: 1rem;
   line-height: 12px;
