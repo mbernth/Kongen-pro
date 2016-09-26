@@ -336,24 +336,22 @@ function mono_flexible_grids() {
 							echo '</section>';
 							}
 							
-							// Image fields 
+											
+							// Image fields
 							if (get_sub_field('image_link')){
+								// Image Array
+								$image =  get_sub_field('image_link');
 								$btn = get_sub_field ( 'image_button' );
 								
 								if( get_sub_field('content') && $selected == 'Non'  || $selected == 'Non Black'  || $selected == 'Non Red'  || $selected == 'Non Grey') {
-									
-									echo '<section class="coll' . $coll. ' backimage" style="background-image: url(';
-										the_sub_field('image_link');
-									echo ');">';
-									echo '</section>';
+									// Full field images
+									echo '<section class="coll' . $coll. ' backimage" style="background-image: url('.$image['url'].');"></section>';
 									
 									}else{
 										
 									echo '<section class="coll' . $coll. '">';
-										echo '<img src="';
-											the_sub_field('image_link');
-										echo '">';
-										
+										echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'" />';
+										// Image button
 										if ($btn['button_text']){
 											if ($btn['page_link']){
 												echo '<a class="button" href="' . $btn['page_link']. '"><span>';
@@ -363,11 +361,9 @@ function mono_flexible_grids() {
 											echo '' . $btn['button_text']. '';
 											echo '</span></a>';
 										}
-										
 									echo '</section>';
 										
 								}
-								
 							}
 							
 							// Video fields

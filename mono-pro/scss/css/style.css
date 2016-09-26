@@ -2471,7 +2471,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .gform_wrapper .gfield_checkbox li label,
 .gform_wrapper .gfield_radio li label {
   display: block;
-  margin: 0 0 0 24px;
+  margin: 6px 0 0 24px;
   padding: 0;
   width: auto;
   vertical-align: top;
@@ -6268,6 +6268,7 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.full-width-content .gridcontainer.Black .slide_content .cbp-qtrotator blockquote p,
 .slide_content .cbp-qtrotator blockquote p {
   font-family: "Playfair Display", serif;
   margin: 40px 0 0 0;
@@ -7037,7 +7038,12 @@ body.has-active-menu {
 
 .gridcontainer ul > li,
 .entry-content ul > li {
-  list-style-type: disc; }
+  list-style-type: disc;
+  margin-bottom: 10px; }
+
+.gridcontainer ul > li:last-child,
+.entry-content ul > li:last-child {
+  margin-bottom: 0px; }
 
 .gridcontainer ol ol,
 .gridcontainer ul ul,
@@ -7077,6 +7083,16 @@ body.has-active-menu {
   color: #5e5448;
   border-bottom: 4px solid #ead3b4;
   box-shadow: inset 0 -30px 0 #ead3b4; }
+
+.full-width-content .gridcontainer.Black blockquote p {
+  color: #fabd43;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 32px;
+  line-height: 3.2rem; }
+
+.full-width-content .gridcontainer.Black blockquote::before {
+  color: #ead3b4; }
 
 .gridcontainer.Grey a {
   color: #031f37;
