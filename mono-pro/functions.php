@@ -177,7 +177,7 @@ function monopro_search_after() {
 
 //* Push search
 // =====================================================================================================================
-
+/*
 add_filter( 'genesis_attr_site-container', 'themeprefix_site_container_id' );
 function themeprefix_site_container_id( $attributes ) { 
  $attributes['id'] = 'o-wrapper';
@@ -190,7 +190,7 @@ function push_scripts_styles() {
 		wp_enqueue_script( 'classie-script', get_bloginfo( 'stylesheet_directory' ) . '/js/menu.js', array( 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( 'push-script', get_stylesheet_directory_uri() . '/js/menu_push.js', array( 'jquery' ), '1.0.0', true );
 }
-
+*/
 
 //* Costum Search form
 // =====================================================================================================================
