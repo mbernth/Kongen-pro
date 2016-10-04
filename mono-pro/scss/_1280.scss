@@ -47,6 +47,21 @@
     bottom: 40px;
 }
 
+.slide_content img{
+	max-width:500px;
+}
+
+.slide_content p{
+	@include font(1.8, 2.8);
+}
+
+.slide_content .quotecontainer blockquote p{
+	@include font(1.8, 2.6);
+}
+
+.slide_content .quotecontainer p{
+	@include font(1.6, 2.4);
+}
 
 	
 /* ## Typographical Elements

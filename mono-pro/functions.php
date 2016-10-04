@@ -20,6 +20,7 @@ define( 'CHILD_THEME_URL', 'https://github.com/mbernth/mono-pro' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Enqueue Google Fonts
+/*
 add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
 
@@ -33,6 +34,30 @@ function genesis_sample_google_fonts() {
 	wp_enqueue_script( 'mono-fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '1.0.0', true );
 	// wp_enqueue_script( 'mono-googlemaps', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', array( 'jquery' ), '1.0.0', true );
 	// wp_enqueue_script( 'mono-maps', get_stylesheet_directory_uri() . '/js/maps.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-flip-jquery', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'mono-modernizr', get_bloginfo( 'stylesheet_directory' ) . '/js/modernizr.min.js', array( 'jquery' ), '1.0.0' );
+	
+	wp_enqueue_script( 'mono-flip', get_bloginfo( 'stylesheet_directory' ) . '/js/mono_flip.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'moono-timeline', get_bloginfo( 'stylesheet_directory' ) . '/js/timeline.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'countdown', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), '1.0.0' );
+	
+	wp_enqueue_script( 'mono-modernizr-custom', get_bloginfo( 'stylesheet_directory' ) . '/js/modernizr.custom.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'quotes', get_stylesheet_directory_uri() . '/js/quotes.js', array( 'jquery' ), '1.0.0' , true);
+	wp_enqueue_script( 'quote_action', get_stylesheet_directory_uri() . '/js/quote_action.js', array( 'jquery' ), '1.0.0' , true);
+
+}
+*/
+//* Enqueue Google Fonts
+add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
+function genesis_sample_google_fonts() {
+
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Playfair+Display&subset=latin-ext', array(), CHILD_THEME_VERSION );
+	wp_enqueue_script( 'monopro-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_style( 'dashicons' );
+	// wp_enqueue_script( 'mono-googleapis', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-fitvids-script', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-fittext', get_stylesheet_directory_uri() . '/js/jquery.fittext.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mono-flip-jquery', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.min.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'mono-modernizr', get_bloginfo( 'stylesheet_directory' ) . '/js/modernizr.min.js', array( 'jquery' ), '1.0.0' );
 	
@@ -395,6 +420,23 @@ function mono_flexible_grids() {
 								echo '</section>';
 							}
 							
+							// Quotes fields
+							if (get_row_layout() == 'quotes_content'){
+								$items = get_field( 'quotes', 'option' );
+								if($items) {
+								echo '<section class="coll' . $coll. '">';
+									echo '<div id="cbp-qtrotator" class="cbp-qtrotator">';
+										foreach($items as $item) {	
+											echo '<div class="cbp-qtcontent">
+											      	<blockquote>' . $item['quote'] .'</blockquote>
+													<footer>' . $item['quote_name'] .'</footer>
+												  </div>';
+										}
+									echo '</div>';
+								echo '</section>';
+								}
+							}
+							
 							// Press preview fields
 							if (get_sub_field('case_name')){
 								$btn = get_sub_field ( 'case_link' );
@@ -502,6 +544,18 @@ function mono_flexible_grids() {
 										}
 									echo '</div>';
 								}
+							}
+							
+							// Single Quote Content
+							if (get_row_layout() == 'single_quote'){
+								echo '<div class="quotecontainer"><blockquote>';
+									the_sub_field('the_quote');
+								echo '</blockquote>';
+								echo '<p><strong>';
+									the_sub_field('name_quote');
+								echo '</strong><br><em>';
+									the_sub_field('title_quote');
+								echo '</em></p></div>';
 							}
 						
 						endwhile;

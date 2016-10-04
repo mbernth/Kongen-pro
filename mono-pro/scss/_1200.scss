@@ -19,6 +19,21 @@
 	width: 280px;
 }
 
+/* # Slider
+--------------------------------------------------- */
+
+.slide_content p{
+	@include font(1.8, 2.8);
+}
+
+.slide_content .quotecontainer blockquote p{
+	@include font(1.8, 2.6);
+}
+
+.slide_content .quotecontainer p{
+	@include font(1.6, 2.4);
+}
+
 /* # Site Navigation
 --------------------------------------------- */
 

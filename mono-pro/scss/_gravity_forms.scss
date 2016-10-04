@@ -605,8 +605,12 @@ body .gform_wrapper label.gfield_label+div.ginput_container {
 }
 
 .gform_wrapper .gfield_required {
-    color: $color-primary-two;
+    color: shade($color-primary-three, 25%);
     margin-left: .25em
+}
+
+.Black .gform_wrapper .gfield_required {
+    color: $color-primary-three;
 }
 
 .Red .gform_wrapper .gfield_required {
@@ -966,7 +970,7 @@ div.gf_page_steps+div.validation_error {
 }
 
 .gform_wrapper .gfield_html.gfield_no_follows_desc {
-    margin-top: .625em
+    margin-top:0;
 }
 
 body .gform_wrapper ul li.gfield.gfield_html img {
@@ -1076,8 +1080,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .gform_wrapper span.ginput_total {
-    color: #060;
-    font-size: 1.2em
+    color: $color-primary-one;
+    font-size: 1.2em;
+	font-weight:700;
 }
 
 .gform_wrapper .top_label span.ginput_total {
@@ -1089,7 +1094,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .gform_wrapper span.ginput_product_price {
-    color: #900
+    color: $color-primary-one;
 }
 
 .gform_wrapper span.ginput_quantity_label {
