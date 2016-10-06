@@ -3,6 +3,24 @@
 
 
 
+/* # Slider
+--------------------------------------------------- */
+.slide_content img {
+    max-width: 100%;
+}
+
+.slide_content p{
+	@include font(1.6, 2.6);
+}
+
+.slide_content .quotecontainer blockquote p{
+	@include font(1.6, 2.6);
+}
+
+.slide_content .quotecontainer p{
+	@include font(1.4, 2.4);
+}
+
 /* ## Typographical Elements
 --------------------------------------------- */
 

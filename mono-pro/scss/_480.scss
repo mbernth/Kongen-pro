@@ -32,6 +32,25 @@
 .slide_content{
     width: 90%;
 	left: 5%;
+	top:15%;
+}
+
+.slide_content p{
+	margin:15px 0;
+}
+
+.slide_content blockquote {
+    margin: 15px 40px 20px 40px;
+}
+
+.slide_content .quotecontainer {
+    margin: 0px auto;
+	padding-top: 0px;
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button {
+	margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
@@ -46,6 +65,8 @@
 .full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
 	@include font(1.4, 1.4);
 }
+
+
 
 /* Quotes Rotator
 --------------------------------------------- */

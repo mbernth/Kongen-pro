@@ -10992,6 +10992,29 @@ Pin Page
 	- Max-width: 600px
 */
 @media only screen and (max-width: 600px) {
+  /* # Slider
+  --------------------------------------------------- */
+  .slide_content img {
+    max-width: 100%; }
+
+  .slide_content p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 26px;
+    line-height: 2.6rem; }
+
+  .slide_content .quotecontainer blockquote p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 26px;
+    line-height: 2.6rem; }
+
+  .slide_content .quotecontainer p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 24px;
+    line-height: 2.4rem; }
+
   /* ## Typographical Elements
   --------------------------------------------- */
   /* # Headings
@@ -11286,7 +11309,22 @@ Pin Page
   --------------------------------------------------- */
   .slide_content {
     width: 90%;
-    left: 5%; }
+    left: 5%;
+    top: 15%; }
+
+  .slide_content p {
+    margin: 15px 0; }
+
+  .slide_content blockquote {
+    margin: 15px 40px 20px 40px; }
+
+  .slide_content .quotecontainer {
+    margin: 0px auto;
+    padding-top: 0px; }
+
+  .full-width-content .gridcontainer.fullscreen.Black .slide_content .button {
+    margin-top: 30px;
+    margin-bottom: 10px; }
 
   .full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
     font-size: 28px;
