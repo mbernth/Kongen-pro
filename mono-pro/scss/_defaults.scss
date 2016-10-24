@@ -370,16 +370,17 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: $color-black;
+	background-color: shade($color-primary-three, 10%);
 	border: 0;
-	color: $color-white;
+	color: shade($color-primary-three, 60%);
 	cursor: pointer;
 	@include font(1.6, 2.4);
 	font-weight: 400;
-	padding: 20px 24px;
+	padding: 20px 36px;
 	width: 100%;
 	max-width:270px;
 	float:right;
+	border:2px solid transparent;
 }
 
 button:hover,
@@ -392,8 +393,9 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: tint( $color-black, 20%);
-	color: $color-white;
+	background-color: $color-primary-three;
+	color: shade($color-primary-three, 60%);
+	border:2px solid shade($color-primary-three, 60%);
 }
 
 .entry-content .button:hover,

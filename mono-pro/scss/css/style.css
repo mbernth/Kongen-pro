@@ -764,19 +764,20 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #11161c;
+  background-color: #b9c85e;
   border: 0;
-  color: #ffffff;
+  color: #52592a;
   cursor: pointer;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
   font-weight: 400;
-  padding: 20px 24px;
+  padding: 20px 36px;
   width: 100%;
   max-width: 270px;
-  float: right; }
+  float: right;
+  border: 2px solid transparent; }
 
 button:hover,
 input:hover[type="button"],
@@ -788,8 +789,9 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-  background-color: #414549;
-  color: #ffffff; }
+  background-color: #cdde68;
+  color: #52592a;
+  border: 2px solid #52592a; }
 
 .entry-content .button:hover,
 .entry-content .button:focus {
@@ -7195,14 +7197,16 @@ body.has-active-menu {
   background-color: #2f2a24;
   color: #dec8ab; }
 
-.full-width-content .gridcontainer.Black .button {
-  background-color: #fabd43;
-  color: #11161c; }
-
-.full-width-content .gridcontainer.Black .button:hover {
-  background-color: #967128;
-  color: #ead3b4; }
-
+/*
+.full-width-content .gridcontainer.Black .button{
+	background-color: shade( $color-primary-two, 0%);
+	color:shade( $color-black, 0%);
+}
+.full-width-content .gridcontainer.Black .button:hover{
+	background-color: shade( $color-primary-two, 40%);
+	color:shade( $color-grey, 0%);
+}
+*/
 .gridcontainer a.button span,
 .entry-content a.button span {
   display: block;
@@ -7478,7 +7482,10 @@ li.comment {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  display: block;
+  width: 100%;
+  float: left; }
 
 .featured-image .site-inner {
   padding-top: 40px;
@@ -8259,12 +8266,16 @@ Pin Page
 /* # Slider
 --------------------------------------------------- */
 .slide_content {
-  padding: 0;
-  position: absolute;
+  padding: 100px 0;
+  color: #ffffff;
+  position: relative;
+  margin: 0 auto;
   width: 80%;
-  left: 10%;
-  top: 20%;
-  color: #ffffff; }
+  	/*
+      position: absolute;
+      left: 10%;
+      top: 20%;
+  	*/ }
 
 .slide_content img {
   max-width: 640px; }
@@ -8802,7 +8813,7 @@ Pin Page
   /* # Slider
   --------------------------------------------------- */
   .slide_content {
-    top: 15%; }
+    padding: 80px 0; }
 
   .full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
     font-size: 68px;
@@ -9143,9 +9154,6 @@ Pin Page
 
   /* # Slider
   --------------------------------------------------- */
-  .slide_content {
-    bottom: 25%; }
-
   .slide_content h2 {
     max-width: 1100px; }
 
@@ -11308,9 +11316,7 @@ Pin Page
   /* # Slider
   --------------------------------------------------- */
   .slide_content {
-    width: 90%;
-    left: 5%;
-    top: 15%; }
+    width: 80%; }
 
   .slide_content p {
     margin: 15px 0; }
@@ -11400,7 +11406,11 @@ Pin Page
       padding: 12px;
       width: 40px;
   }
-  */ }
+  */
+  /* # Timeline
+  --------------------------------------------------- */
+  .cd-timeline-content {
+    margin-left: 40px; } }
 /*
 - Print Styles
 */

@@ -173,6 +173,7 @@
 	color:shade( $color-grey, 5%);
 }
 
+/*
 .full-width-content .gridcontainer.Black .button{
 	background-color: shade( $color-primary-two, 0%);
 	color:shade( $color-black, 0%);
@@ -181,6 +182,7 @@
 	background-color: shade( $color-primary-two, 40%);
 	color:shade( $color-grey, 0%);
 }
+*/
 
 .gridcontainer a.button span,
 .entry-content a.button span{
@@ -491,6 +493,10 @@ li.comment {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+	
+	display: block;
+    width: 100%;
+    float: left;
 }
 
 .featured-image .site-inner {

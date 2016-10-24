@@ -48,12 +48,17 @@
 --------------------------------------------------- */
 
 .slide_content{
-    padding: 0;
+    padding: 100px 0;
+	color: $color-white;
+	position: relative;
+	margin:0 auto;
+	width: 80%;
+	
+	/*
     position: absolute;
-    width: 80%;
     left: 10%;
     top: 20%;
-	color: $color-white;
+	*/
 }
 
 .slide_content img{
