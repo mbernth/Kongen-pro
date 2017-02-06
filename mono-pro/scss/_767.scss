@@ -141,6 +141,17 @@ p.entry-meta {
 	@include font(4, 4);
 	max-width:90%;
 }
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .wrap{
+	width: 100%;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+	max-width: 220px;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft span,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright span{
+	padding: 15px;
+}
 
 /* # Colour background
 --------------------------------------------- */

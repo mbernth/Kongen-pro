@@ -107,6 +107,22 @@
     color: $color-white;
 	text-transform:uppercase;
 }
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+    clear: none;
+	@include font(1.4, 1.4);
+	max-width: 350px;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft span,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright span{
+	padding: 18px 24px;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft{
+	float: left;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+	float: right;
+}
 
 .gridcontainer .slide_content .button:before,
 .gridcontainer .slide_content .button:after,

@@ -19,6 +19,13 @@
 	width:100%;
 	@include font(1.8, 2.2);
 }
+	
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+    clear: none;
+	@include font(1.4, 1.4);
+	max-width: 300px;
+}
 
 /* # Structure and Layout
 --------------------------------------------- */
@@ -211,5 +218,6 @@
 .footer_search {
 	padding-bottom:80px;
 }
+
 
 }

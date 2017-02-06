@@ -38,6 +38,13 @@
 .slide_content hr{
 	width:100%;
 }
+	
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft,
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+    clear: none;
+	@include font(1.2, 1.2);
+	max-width: 250px;
+}
 
 /* # Site Navigation
 --------------------------------------------- 

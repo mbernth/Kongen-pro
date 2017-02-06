@@ -511,6 +511,7 @@ function mono_flexible_grids() {
 			// Full screen image fields
 			if( get_row_layout() == 'full_screen_image' ):
 				$btn = get_sub_field ( 'full_screen_button' );
+				$btntwo = get_sub_field ( 'full_screen_button_two' );
 				
 				if (get_sub_field ( 'hide_full_screen_image' )){
 				}else{
@@ -560,15 +561,27 @@ function mono_flexible_grids() {
 						
 						endwhile;
 						
+						echo '<div class="wrap">';
 						if ($btn){
 							if ($btn['page_link']){
-								echo '<a class="button" href="' . $btn['page_link']. '"><span>';
+								echo '<a class="button btnleft" href="' . $btn['page_link']. '"><span>';
 							}else{
-								echo '<a class="button" href="' . $btn['url_link']. '" target="_blank""><span>';
+								echo '<a class="button btnleft" href="' . $btn['url_link']. '" target="_blank""><span>';
 							}
 							echo '' . $btn['button_text']. '';
 							echo '</span></a>';
 						}
+					
+						if ($btntwo){
+							if ($btntwo['page_link']){
+								echo '<a class="button btnright" href="' . $btntwo['page_link']. '"><span>';
+							}else{
+								echo '<a class="button btnright" href="' . $btntwo['url_link']. '" target="_blank""><span>';
+							}
+							echo '' . $btntwo['button_text']. '';
+							echo '</span></a>';
+						}
+						echo '</div>';
 					
 				echo '</div></div></div></article>';
 				}

@@ -20,6 +20,14 @@
 .slide_content .quotecontainer p{
 	@include font(1.4, 2.4);
 }
+	
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnleft{
+	float: none;
+}
+.full-width-content .gridcontainer.fullscreen.Black .slide_content .button.btnright{
+	float: none;
+	margin-top: 40px;
+}
 
 /* ## Typographical Elements
 --------------------------------------------- */
